@@ -1,0 +1,5 @@
+sample,r1,r2
+test2,/Users/hoge/fastq/SRR5367873_1.fastq,/Users/hoge/fastq/SRR5367873_2.fastq
+ctr1,/Users/hoge/fastq/SRR5367876_1.fastq,/Users/hoge/fastq/SRR5367876_2.fastq
+ctr2,/Users/hoge/fastq/SRR5367877_1.fastq,/Users/hoge/fastq/SRR5367877_2.fastq
+test1,/Users/hoge/fastq/SRR5367872_1.fastq,/Users/hoge/fastq/SRR5367872_2.fastq
