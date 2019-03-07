@@ -1,11 +1,11 @@
 # carme
 very lightweight kallisto RNA-seq pipeline
 
-This short Python3 script is designed to run FastQC and kallisto analysis on many samples.
+This small Python3 script is designed to run FastQC and kallisto analysis on many samples.
 
 ## Prerequisite
 
-Written in Python3. Tested solely on macOS. In principle, it should run on any POSIX systems.
+Written in Python3. Tested solely on macOS. It should run on any POSIX systems in principle.
 You need to have kallisto, FastQC in your PATH.
 
 ## Usage
