@@ -10,6 +10,6 @@ You need to have kallisto, FastQC in your PATH.
 
 ## Usage
 
-carme.py [-h] [--single] [-t T] [-l FRAG_LEN] [-s FRAG_SD] kallisto_index_path csv_path outdir
+```carme.py [-h] [--single] [-t T] [-l FRAG_LEN] [-s FRAG_SD]  kallisto_index_path  csv_path  outdir```
 
 run ```carme.py -h``` for more options.
