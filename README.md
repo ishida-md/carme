@@ -1,5 +1,5 @@
 # carme
-very lightweight kallisto RNA-seq pipeline
+lightweight kallisto RNA-seq pipeline
 
 This small Python3 script is designed to run FastQC and kallisto analysis on many samples. The output can be readily analyzed by sleuth.
 
