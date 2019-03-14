@@ -61,7 +61,9 @@ def run_kallisto_double(kallisto_idx, read1, read2, sample_dir, n_thread):
     kallisto_command = ["kallisto", "quant", "-t", n_thread, "-b", "100", "-i", kallisto_idx, "-o", sample_dir, read1, read2]
     subprocess.run(kallisto_command)
 
-def main(kallisto_idx, csv_path, outdir, is_single, n_thread, frag_len, frag_sd):
+def main():
+    kallisto_idx, csv_path, outdir, is_single, n_thread, frag_len, frag_sd = parse_args()
+    print(datetime.now().strftime('%Y-%m-%d %H:%M:%S') + ": kallisto pipeline: starting the run")
     write_log(outdir)
     
     if not os.path.isdir(outdir): os.mkdir(outdir) # check output directory
@@ -87,9 +89,8 @@ def main(kallisto_idx, csv_path, outdir, is_single, n_thread, frag_len, frag_sd)
         else:
             run_kallisto_double(kallisto_idx, read1, read2, sample_dir, n_thread)
     csvfile.close()
+    
+    print(datetime.now().strftime('%Y-%m-%d %H:%M:%S') + ": kallisto pipeline: run ended")
 
 if __name__ == "__main__":
-    print(datetime.now().strftime('%Y-%m-%d %H:%M:%S') + ": kallisto pipeline: starting the run")
-    kallisto_idx, csv_path, outdir, is_single, n_thread, frag_len, frag_sd = parse_args()
-    main(kallisto_idx, csv_path, outdir, is_single, n_thread, frag_len, frag_sd)
-    print(datetime.now().strftime('%Y-%m-%d %H:%M:%S') + ": kallisto pipeline: run ended")
+    main()
