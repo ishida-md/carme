@@ -27,7 +27,7 @@ def parse_args():
     parser.add_argument('-s', '--sd', type = int, dest = 'frag_sd', default = 30)
     args = parser.parse_args()
     
-    return (args.kallisto_index, args.csv, args.outdir,
+    return (args.kallisto_index_path, args.csv_path, args.outdir,
             args.single, str(args.t), str(args.frag_len), str(args.frag_sd))
 
 def capture_bash(cmd):
